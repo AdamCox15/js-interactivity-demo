@@ -33,6 +33,10 @@ const resetB = (event) => {
 
 const selectTheme = (event) => {
      console.log(event.target.textContent)
+     const theme = event.target.textContent;
+     document.querySelector('body').className = theme;
+     document.querySelector('main').className = theme;
+
 }
 
 //Step 3: Combine steps 1 and 2 using an event listener
